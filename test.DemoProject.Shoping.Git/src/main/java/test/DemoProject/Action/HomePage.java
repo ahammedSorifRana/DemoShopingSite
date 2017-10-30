@@ -31,6 +31,8 @@ public class HomePage{
 		System.out.println("Desktop 3");
 		System.out.println("Laptop 1");
 		System.out.println("Desktop4");
+		
+		int x = 4;
 		}
 	
 	public void logInApp(String EmailAdd,String PassWord) {
