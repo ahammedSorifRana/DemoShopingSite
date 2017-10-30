@@ -29,11 +29,6 @@ public class HomePage{
 	
 	public void logInApp(String EmailAdd,String PassWord) {
 	 xDriver.switchTo().frame(xDriver.findElement(By.id("PreviewFrame")));
-		ClickOnLogin.click();
-		EnterEamil.sendKeys(EmailAdd);
-		EnterPass.sendKeys(PassWord);
-		ClickOnSingIn.click();
-		System.out.println("hello");
 		}
 	
 
