@@ -29,6 +29,7 @@ public class HomePage{
 		System.out.println("Hello World");
 		System.out.println("Desktop add");
 		System.out.println("Desktop 3");
+		System.out.println("Laptop 1");
 		}
 	
 	public void logInApp(String EmailAdd,String PassWord) {
