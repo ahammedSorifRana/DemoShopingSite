@@ -15,6 +15,7 @@ public class BaseTest {
 	public void init() {
 		chooseBrowser(Browser);
 		getUrl(URL);
+		
 		//String log4jConfPath ="log4j.properties";
 		//PropertyConfigurator.configure(log4jConfPath);
 		
