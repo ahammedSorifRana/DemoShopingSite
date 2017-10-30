@@ -30,6 +30,7 @@ public class HomePage{
 		System.out.println("Desktop add");
 		System.out.println("Desktop 3");
 		System.out.println("Laptop 1");
+		System.out.println("Desktop4");
 		}
 	
 	public void logInApp(String EmailAdd,String PassWord) {
