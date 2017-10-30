@@ -13,6 +13,7 @@ public class TC0001_VarifyLoginWithValidCredential extends BaseTest {
 	@BeforeTest
 	public void setUp() {
 		init();
+		
 		}
 	@Test
 	public void VarifyWithValidCredential() {
