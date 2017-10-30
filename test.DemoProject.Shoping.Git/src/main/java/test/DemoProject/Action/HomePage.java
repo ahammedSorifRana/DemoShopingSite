@@ -27,6 +27,7 @@ public class HomePage{
 		this.xDriver = driver;
 		PageFactory.initElements(driver, this);
 		System.out.println("Hello World");
+		System.out.println("Desktop add");
 		}
 	
 	public void logInApp(String EmailAdd,String PassWord) {
@@ -35,6 +36,7 @@ public class HomePage{
 		EnterEamil.sendKeys(EmailAdd);
 		EnterPass.sendKeys(PassWord);
 		ClickOnSingIn.click();
+		System.out.println("hello");
 		}
 	
 
