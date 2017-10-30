@@ -15,24 +15,19 @@ public class BaseTest {
 	public void init() {
 		chooseBrowser(Browser);
 		getUrl(URL);
-		
-		//String log4jConfPath ="log4j.properties";
-		//PropertyConfigurator.configure(log4jConfPath);
-		
-	}
+		}
 	
 	
 	public void chooseBrowser(String Browser) {
-		
-		//log.info("creating object of "+Browser);
+
 		switch(Browser) {
 		case"Firefox":
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Ahammed Sorif\\Desktop\\Selenium\\Selenium_Driver\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"//Driver//geckodriver.exe");
 
 			Driver = new FirefoxDriver();
 			break;
 		case"Chrome":
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Ahammed Sorif\\Desktop\\Selenium\\Selenium_Driver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//Driver//chromedriver.exe");
 			 Driver = new ChromeDriver();
 			
 			 break;
@@ -44,8 +39,6 @@ public class BaseTest {
 		}
 	
 	public void getUrl(String URL) {
-		//log.info("Navigating to :" +URL);
-		
 		Driver.get(URL);
 		Driver.manage().window().maximize();
 		Driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
