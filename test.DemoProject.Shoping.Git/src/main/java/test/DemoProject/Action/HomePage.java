@@ -19,6 +19,8 @@ public class HomePage{
 	@FindBy(xpath="//form[contains(@id,'customer')]//input[@class='btn']")
 	WebElement ClickOnSingIn;
 	
+	
+	
 	public  HomePage(WebDriver driver) {
 		this.xDriver = driver;
 		PageFactory.initElements(driver, this);
